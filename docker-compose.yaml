@@ -12,7 +12,7 @@ services:
       - FRONTEND_ORIGIN=${FRONTEND_ORIGIN}
       - PORT=${BACKEND_PORT}
     volumes:
-      - db-data:/app/database
+      - /root/unitest/database:/app/database  # Montage du volume local dans le conteneur
 
   frontend:
     image: unittcms-frontend:latest
@@ -26,6 +26,3 @@ services:
       - PORT=${FRONTEND_PORT}
     depends_on:
       - backend
-
-volumes:
-  db-data:
