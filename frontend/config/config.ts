@@ -1,5 +1,5 @@
 const Config = {
-  apiServer: process.env.NEXT_PUBLIC_BACKEND_ORIGIN || 'http://46.202.129.20:8002',
+  apiServer: process.env.NEXT_PUBLIC_BACKEND_ORIGIN || 'https://test-backend.intranet.arcop.sn',
 
   // set 'NEXT_PUBLIC_IS_DEMO=true' in frontend/.env
   isDemoSite: process.env.NEXT_PUBLIC_IS_DEMO === 'true' || false,
